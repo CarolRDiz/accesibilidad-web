@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <title>Exposiciones · La Galería Ecléctica</title>
@@ -11,20 +11,18 @@
         <header class="bg-verde-oscuro">
             <div class="cabecera-top">
                 <div>
-                    <a href="donar.html">Donaciones</a>
-                </div>
-                <div>
                     <a href="#">ES</a>
                     <a href="#">CA</a>
                     <a href="#">EN</a>
                 </div>
             </div>
             <a href="index.html">
-                <img src="assets/img/logo.png" />
+                <img alt="Logo de LAGaEc.Enlace que te lleva a la página de inicio." src="assets/img/logo.png" />
             </a>
             <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
                     <span class="navbar-toggler-icon"></span>
+                    Menú de enlaces
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
@@ -32,6 +30,7 @@
                         <a class="nav-item nav-link" href="exposiciones.html">Exposiciones</a>
                         <a class="nav-item nav-link" href="#">Actividades</a>
                         <a class="nav-item nav-link" href="#">Revista</a>
+                        <a class="nav-item nav-link" href="donar.html">Donaciones</a>
                     </div>
                 </div>
             </nav>
@@ -56,7 +55,7 @@
             <section id="proximas" class="actividades container">
                 <div class="fila align-izquierda">
                     <div class="tres-columnas">
-                        <h4>Del 2 de diciembre de 2018 hasta el 17 de abril de 2019</h4>
+                        <h3>Del 2 de diciembre de 2018 hasta el 17 de abril de 2019</h3>
                         <button class="btn btn-secondary">Comprar entradas</button>
                     </div>
                     <div class="dos-tres-columnas">
@@ -116,7 +115,7 @@
 
         <footer class="container-fluid">
             <div class="container pie">
-                <h4>La Galería Ecléctica</h4>
+                <h3>La Galería Ecléctica</h3>
                 <a href="#">
                     Plaza del Poblenou, 1 <br>
                     08018 Barcelona
@@ -128,18 +127,19 @@
                     <a href="#"><i class="fab fa-youtube-square"></i></a>
                 </div>
                 <form>
-                    <h4>Suscríbete a nuestra Newsletter</h4>
+                    <h3>Suscríbete a nuestra Newsletter</h3>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter email">
+                        <label for="email">Email:</label>
+                        <input id="email"name="email"type="email" class="form-control" placeholder="Enter email">
                     </div>
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input">
-                        <label>Acepto la <a href="#">Política de privacidad </a></label>
+                        <input id="privacity" name="privacity"type="checkbox" class="form-check-input">
+                        <label for="privacity"class="form-check-label">Acepto la <a href="#">Política de privacidad </a></label>
                     </div>
                     <button type="submit" class="btn btn-secondary">Registrarme</button>
                 </form>
                 <a href="index.html" class="logo">
-                    <img src="assets/img/logo.png"/>
+                    <img alt="Logo de LAGaEc.Enlace que te lleva a la página de inicio." src="assets/img/logo.png"/>
                 </a>
                 <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
                     <div class="navbar-nav">
@@ -147,11 +147,12 @@
                         <a class="nav-item nav-link" href="#">Política de Privacidad</a>
                         <a class="nav-item nav-link" href="#">Aviso Legal</a>
                         <a class="nav-item nav-link" href="#">Cookies</a>
+                        
                     </div>
                 </nav>
             </div>
             <div class="creditos">
-                <h6>Créditos</h6>
+                <h4>Créditos</h4>
                 <p>© LAGaEC. Imágenes de las obras artísticas de dominio público,
                     <a href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0">The Metropolitan Museum</a>.
                     Fotografías, <a href="https://unsplash.com">Unsplash</a>
