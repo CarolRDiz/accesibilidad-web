@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Inicio · La Galería Ecléctica</title>
@@ -10,7 +10,6 @@
 <body>
 <header class="bg-verde-oscuro">
     <div class="cabecera-top">
-        <div><a href="donar.html">Donaciones</a></div>
         <div>
             <a href="#">ES</a>
             <a href="#">CA</a>
@@ -18,11 +17,12 @@
         </div>
     </div>
     <a href="index.html">
-        <img src="assets/img/logo.png"/>
+        <img alt="Logo de LAGaEc.Enlace que te lleva a la página de inicio" src="assets/img/logo.png"/>
     </a>
     <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup">
             <span class="navbar-toggler-icon"></span>
+            Menú de enlaces
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
@@ -30,47 +30,51 @@
                 <a class="nav-item nav-link" href="exposiciones.html">Exposiciones</a>
                 <a class="nav-item nav-link" href="#">Actividades</a>
                 <a class="nav-item nav-link" href="#">Revista</a>
+                <a class="nav-item nav-link" href="donar.html">Donaciones</a>
             </div>
         </div>
     </nav>
 </header>
 
 <main class="container-fluid">
+    <section class="inicio-cabecera">
+        <div class="container">
+            <h1>Inicio</h1>
+        </div>
+    </section>
     <section class="exposiciones container">
         <h2> Exposiciones actuales</h2>
         <div class="fila">
             <div class="dos-columnas">
                 <a href="expo-detalle.html">
-                    <img src="assets/img/expo-cezanne.jpg"/>
-                </a>
-                <a href="expo-detalle.html"><h3>Impresiones </h3></a>
+                    <img alt="Foto sobre el artículo Impresiones." src="assets/img/expo-cezanne.jpg"/>
+                <h3>Impresiones </h3></a>
                 <p>Hasta abril de 2019</p>
             </div>
             <div class="dos-columnas">
                 <a href="#">
-                    <img src="assets/img/expo-caravaggio.jpg"/>
-                </a>
-                <a href="#"> <h3>Caravaggio: el pintor del claroscuro </h3></a>
+                    <img alt="Foto sobre el artículo Caravaggio: el pintor del claroscuro."src="assets/img/expo-caravaggio.jpg"/>
+                    <h3>Caravaggio: el pintor del claroscuro </h3></a>
                 <p>Hasta mayo de 2019</p>
             </div>
         </div>
     </section>
 
     <section class="actividades container">
-        <h2> Exposiciones actuales</h2>
+        <h2> Próximas exposiciones</h2>
         <div class="fila">
             <div class="tres-columnas">
-                <img src="assets/img/activ-guide.jpg"/>
+                <img alt="Foto sobre el artículo Visita guiada a la colección de LAGaEC"src="assets/img/activ-guide.jpg"/>
                 <h3>Visita guiada a la colección de LAGaEC </h3>
                 <p>Jueves a las 12 h. Sábados a las 10 h. Actividad gratuita con inscripción previa</p>
             </div>
             <div class="tres-columnas">
-                <img src="assets/img/activ-arts.jpg"/>
+                <img alt="Foto sobre el artículo Experiencias creativas"src="assets/img/activ-arts.jpg"/>
                 <h3>Experiencias creativas </h3>
                 <p>Del 2 de enero al 25 de junio de 2019. Actividad gratuita con inscripción previa</p>
             </div>
             <div class="tres-columnas">
-                <img src="assets/img/activ-conf.jpg"/>
+                <img alt="Foto sobre el artículo Cita con los expertos" src="assets/img/activ-conf.jpg"/>
                 <h3>Cita con los expertos</h3>
                 <p>Del 7 de enero al 1 de julio de 2019 (cada primer lunes de mes). Conferencias gratuitas con inscripción previa</p>
             </div>
@@ -128,16 +132,17 @@
         <form>
             <h4>Suscríbete a nuestra Newsletter</h4>
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="Enter email">
+                <label for="email">Email:</label>
+                <input id="email" name="email"type="email" class="form-control" placeholder="Enter email">
             </div>
             <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input">
-                <label class="form-check-label">Acepto la <a href="#">Política de privacidad </a></label>
+                <input id="privacity" name="privacity"type="checkbox" class="form-check-input">
+                <label for="privacity"class="form-check-label">Acepto la <a href="#">Política de privacidad </a></label>
             </div>
             <button type="submit" class="btn btn-secondary">Registrarme</button>
         </form>
         <a href="index.html" class="logo">
-            <img src="assets/img/logo.png"/>
+            <img alt="Logo de LAGaEc. Enlace que te lleva a la página de inicio" src="assets/img/logo.png"/>
         </a>
         <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
             <div class="navbar-nav">
@@ -150,7 +155,7 @@
 
     </div>
     <div class="creditos">
-        <h6>Créditos</h6>
+        <h5>Créditos</h5>
         <p>© LAGaEC. Imágenes de las obras artísticas de dominio público,
             <a href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0">The Metropolitan Museum</a>.
             Fotografías, <a href="https://unsplash.com">Unsplash</a>
