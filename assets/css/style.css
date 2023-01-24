@@ -18,14 +18,16 @@
     color: #48C9B0;
 }
 a{
-    color: #48C9B0 ;
+    /*color: #48C9B0 ;*/
+    color: #2b7b69;
 }
 a:hover{
     color: #6c757d ;
 }
 
 h3{
-    color: #48C9B0 ;
+    /*color: #48C9B0 ;*/
+    color: #2b7b69;
 }
 
 main img{
@@ -53,7 +55,8 @@ header{
     padding: 5px 10px;
 }
 .cabecera-top a{
-    color: #fff;
+    /*color: #fff;*/
+    color: black;
 }
 .cabecera-top > div{
     max-width: 200px;
@@ -172,9 +175,33 @@ main{
     background-repeat: no-repeat;
     margin-top: 0px;
 }
+.exposiciones-cabecera{
+    background: url("../img/exposiciones-h1.webp");
+    min-height: 350px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+}
+.inicio-cabecera{
+    background: url("../img/inicio-h1.jpg");
+    min-height: 350px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+}
 
 .donar-cabecera > .container,
-.detalle-cabecera > .container{
+.detalle-cabecera > .container,
+.exposiciones-cabecera > .container,
+.inicio-cabecera > .container{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -184,13 +211,18 @@ main{
 }
 
 .donar-cabecera h1,
-.detalle-cabecera  h1{
-    color: #fff;
+.detalle-cabecera  h1,
+.exposiciones-cabecera h1,
+.inicio-cabecera h1{
+    /*color: #fff;*/
+    color: black;
     background: #48C9B0;
 }
 
 .detalle-cabecera  h2, .detalle-cabecera span{
-    color: #fff;
+    /*color: #fff;*/
+    color: black;
+    background: #48C9B0;
     width: 100%;
 }
 .detalle-cabecera button{
@@ -257,7 +289,8 @@ footer.container-fluid{
 .creditos{
     background: #5A6268;
     margin-top: 30px;
-    font-size: 0.65rem;
+    /*font-size: 0.65rem;*/
+    font-size: 0.70rem;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -267,7 +300,8 @@ footer.container-fluid{
     margin: 0 auto;
 }
 .creditos a{
-    color: #48C9B0 ;
+    /*color: #48C9B0 ;*/
+    color: #5afdda;
 }
 .creditos a:hover{
     color: #007bff ;
